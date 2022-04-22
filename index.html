@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;600;700;800;900&family=Outfit:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: hsl(212, 45%, 89%);
+        font-family: "outfit", sans-serif;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        position: absolute;
+        width: 20vw;
+        height: 60vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: hsl(0, 0%, 100%);
+        border-radius: 5%;
+        box-shadow: 10px 10px hsl(212, 45%, 89%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-container {
+        position: absolute;
+        width: 90%;
+        height: 70%;
+        margin: 5%;
+      }
+      .qr-image {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 5%;
+      }
+      .title {
+        position: absolute;
+        width: 16vw;
+        height: 10vh;
+        bottom: 14%;
+      }
+      .title p {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        font-weight: 900;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      .description {
+        position: absolute;
+        width: 24vw;
+        height: 10vh;
+        bottom: 16%;
+      }
+      .description p {
+        font-weight: 500;
+        font-size: 15px;
+        font-style: normal;
+        text-align: center;
+        margin: 10%;
+        color: hsl(218, 44%, 22%);
+        padding: 10%;
+      }
+
+      @media screen and (max-width: 650px) {
+        .container {
+          width: 90vw;
+          height: 70vh;
+        }
+        .title {
+          width: 90vw;
+          height: 5vh;
+          margin: 5%;
+          bottom: 18%;
+        }
+        .title p {
+          font-weight: 900;
+          font-size: 1rem;
+        }
+        .description {
+          width: 130%;
+          height: 10vh;
+          bottom: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="./images/image-qr-code.png" alt="" class="qr-image" />
+      </div>
+      <div class="title">
+        <p>Improve Your front-end skills by building projects</p>
+      </div>
+
+      <div class="description">
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div> 
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Umanand Tripathi</a>.
+    </div>
+  </body>
+</html>
